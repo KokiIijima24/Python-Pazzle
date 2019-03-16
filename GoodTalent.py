@@ -7,7 +7,6 @@ Candidates = ['Aly', 'Bob', 'Cal', 'Don', 'Eve', 'Fay']
 CandidateTalent = [['Flex', 'Code'], ['Dance', 'Magic'], ['Sing', 'Magic'], ['Sing', 'Dance'], ['Dance', 'Act', 'Code'], ['Act', 'Code']]
 
 
-
 def Hire4Show(Candidates, Talents, CandidateTalent):
     '''
     全てのTalentを含むようなCandidateの組み合わせを全通り作成する。
