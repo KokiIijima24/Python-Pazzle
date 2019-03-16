@@ -6,6 +6,7 @@ Talents = ['Sing', 'Dance', 'Magic', 'Act', 'Flex', 'Code']
 Candidates = ['Aly', 'Bob', 'Cal', 'Don', 'Eve', 'Fay']
 CandidateTalent = [['Flex', 'Code'], ['Dance', 'Magic'], ['Sing', 'Magic'], ['Sing', 'Dance'], ['Dance', 'Act', 'Code'], ['Act', 'Code']]
 
+a = ['test']
 
 def Hire4Show(Candidates, Talents, CandidateTalent):
     '''
