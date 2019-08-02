@@ -1,0 +1,44 @@
+# coding: utf-8
+# 自分の得意な言語で
+# Let's チャレンジ！！
+
+def judge(BoardPosition, x, Board, A):
+    if (Board[BoardPosition[0]][BoardPosition[1]] == '.'):
+        judge([BoardPosition[0] + 1, BoardPosition[1]], x, Board, A)
+    elif (Board[BoardPosition[0]][BoardPosition[1]] == '#' or BoardPosition[0] == A - 1):
+        return BoardPosition[0]
+
+'''
+b = ''
+input_lines = input()
+A = list(input_lines.split(" "))
+A = [int(x) for x in A]
+print(A)
+for i in range(int(A[0])):
+    b += '\n'
+    for j in range(int(A[1])):
+        b += '.'
+print(b)
+
+for i in range(int(A[2])):
+    input_a = input()
+    c = list(input_a.split(" "))
+ #   print(c)
+    d = int(c[2])
+    f = int(c[1])
+    g = int(c[0])
+ 
+'''
+
+Board = []
+b = []
+for i in range(7):
+    for j in range(10):
+        b.append('.')
+    Board.append(b)
+    b = []
+    
+print(Board)
+
+judge([0, 0], 1, Board, 7)
+
